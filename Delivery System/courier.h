@@ -1,11 +1,16 @@
 #pragma once
 #include <string>
+#include <vector>
 
 using namespace std;
+
+class Order;
 
 class Courier {
 public:
 	Courier(int id, const string& name, const string& phoneNumber, const string& vehicleType, bool isAvailable);
+
+	bool assignOrder(Order* order);
 
 	int getId() const { return m_id; }
 	string getName() const { return m_name; }
@@ -19,4 +24,5 @@ private:
 	string m_phoneNumber;
 	string m_vehicleType;
 	bool m_isAvailable;
+	vector<Order*> m_currentOrders;
 };

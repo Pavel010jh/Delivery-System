@@ -6,3 +6,7 @@ Client::Client(int id, const string& name, const string& phoneNumber, const stri
 void Client::addAddress(const Address& newAddress) {
 	m_addresses.push_back(newAddress);
 }
+
+void Client::addToHistory(Order* order) {
+	m_orderHistory.push_back(order);
+}
