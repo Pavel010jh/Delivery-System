@@ -129,6 +129,7 @@
     <ClCompile Include="Delivery System.cpp" />
     <ClCompile Include="parcel.cpp" />
     <ClCompile Include="tariff.cpp" />
+    <ClCompile Include="warehouse.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="address.h" />
@@ -136,6 +137,7 @@
     <ClInclude Include="courier.h" />
     <ClInclude Include="parcel.h" />
     <ClInclude Include="tariff.h" />
+    <ClInclude Include="warehouse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
